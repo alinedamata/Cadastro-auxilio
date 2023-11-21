@@ -1,0 +1,285 @@
+body{
+    box-sizing: border-box;
+    background-color: #EEEE;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+
+.inscricao{
+    width: 100%;
+    height: 100vh;
+    background: url("./assets/pandemia_corona.jpg.webp");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inscricao p{
+    position: relative;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+}
+
+.inscricao a{
+    position: relative;
+    border: none;
+    background-color: #FFC300;
+    width: 220px;
+    height: 40px;
+    color: #ffff;
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center !important;
+    margin: 0;
+
+    transition: 0.4s ease-in-out;
+}
+
+.inscricao a:hover{
+    background-color: #b99522;
+}
+
+.overlay-inscricao{
+    position: absolute;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.59); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    /*opacity:0;*/
+    font-size: 20px;
+    text-align: center;
+}
+
+.beneficios{
+    background-color:  #38a3a5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.beneficios div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.beneficios .img-beneficios{
+    align-items: center;
+    justify-content: center;
+}
+
+.beneficios .img-beneficios img{
+    width: 80%;
+}
+
+.beneficios .text{
+    padding: 20px 20px;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+
+.beneficios .text h2{
+    color: #0f3f00;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.beneficios .text p{
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.beneficios .text ul li{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin: 10px 0;
+}
+
+.dados{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    /* text-align: center; */
+    padding: 20px 0;
+    background-color:  #001d3d;
+}
+
+.dados h3{
+    color: #FFC300;
+    text-align: center;
+}
+.dados span{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 20px auto;
+
+    /* margin: 20px 30px 30px 30px; */
+    background: #22577a;
+    padding: 20px;
+    border-radius: 10px;}
+
+/* formulario */
+
+  * {
+    box-sizing: border-box;
+    outline: 0;
+  }
+  
+
+/*   
+  .container {
+    max-width: 100px;
+    margin: 50px auto;
+    background: #dfdfdf;
+    padding: 8px;
+    border-radius: 10px;
+  }
+   */
+  form input,
+  form label,
+  form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  form label {
+    color: #fff;
+  }
+  form input {
+    font-size: 18px;
+    height: 20px;
+    padding: 1.9rem 20px;
+    border-radius: 1rem;
+    /* background-color: #03045e; */
+  }
+
+  form select {
+    font-size: 18px;
+    width: 100%;
+    height: 62px;
+    padding:10px;
+    border-radius: 1rem;
+  }
+  form input:focus {
+    outline: 1px solid #615017;
+  }
+  
+  form button {
+    border: none;
+    background:  #FFC300;
+    color: #fcfcfc;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 25px;
+  }
+  
+  form button:hover {
+    background: #615017;
+  }
+.arquivo {
+    color: #fff;
+}
+
+/* media */
+@media screen and (max-width: 600px) {
+    .btn-menu{
+        display: flex;
+    }
+
+    .dados .form{
+        flex-direction: column;
+    }
+
+    .beneficios{
+        flex-direction: column-reverse;
+    }
+
+    .beneficios div{
+        width: 90%;
+    }
+
+}
+
+.modal-header{
+    background-color: #FFC300;
+}
+
+.modal-header h5{
+    color: #ffffff;
+}
+
+.loader {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #FFC300;
+    border-radius: 50%;
+    border-top: 2px solid #ffff;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+ 
